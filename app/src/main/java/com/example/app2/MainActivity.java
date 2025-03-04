@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         body = findViewById(R.id.body);
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("message");
+        DatabaseReference myRef = database.getReference("thongtin");
 
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
                 // This method is called once with the initial value and again
                 // whenever data at this location is updated.
                 ThongTIN value = dataSnapshot.getValue(ThongTIN.class);
+                hienthi(value.getId(), value.getTitle(),value.getBody());
                 Log.d(TAG, "Value is: " + value);
             }
 
@@ -64,8 +65,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-    private void hienthi(String id1, String title1, String bod1y){
-        id.setText(id1);
+    private void hienthi(Long id1, String title1, String bod1y){
+        id.setText(id1.toString());
         title.setText(title1);
         body.setText(bod1y);
         showNotification(title1,bod1y);

@@ -1,13 +1,14 @@
 package com.example.app2;
 
 public class ThongTIN {
-    private String id,title,body;
+    private String title,body;
+    public Long id;
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
