@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "359980369263",
+    "project_id": "thongbaoadroid",
+    "storage_bucket": "thongbaoadroid.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:359980369263:android:9e06ceefcfde8212a0d49a",
+        "android_client_info": {
+          "package_name": "com.example.app2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGX3B8WDNCW2TAOm6XvJu3LrG5_Tbf8j8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
